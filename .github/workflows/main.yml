@@ -44,7 +44,7 @@ jobs:
     secrets: inherit
     with:
       CONTEXT: dev
-      ROLE_TO_ASSUME: arn:aws:iam::<dev-account-number>:role/<dev-role-name>
+      ROLE_TO_ASSUME: arn:aws:iam::634210816736:role/sagebase-github-oidc-sage-ProviderRoledccvalidator-MC6P2ESAYJW4
 
   cdk-deploy-prod:
     if: ${{github.ref == 'refs/heads/prod'}}
@@ -53,4 +53,4 @@ jobs:
     secrets: inherit
     with:
       CONTEXT: prod
-      ROLE_TO_ASSUME: arn:aws:iam::<production-account-number>:role/<production-role-name>
+      ROLE_TO_ASSUME: arn:aws:iam::593604776210:role/sagebase-github-oidc-sage-ProviderRoledccvalidator-1RXRNWU2KMLKB

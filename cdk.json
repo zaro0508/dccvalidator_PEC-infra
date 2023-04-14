@@ -31,36 +31,36 @@
       "aws-cn"
     ],
     "dev": {
-      "IMAGE_PATH_AND_TAG": "ghcr.io/sage-bionetworks/myapp:release-1.0",
+      "IMAGE_PATH_AND_TAG": "ghcr.io/sage-bionetworks/dccvalidator_pec:v1.1.0",
       "AWS_DEFAULT_REGION": "us-east-1",
       "PORT": "3838",
       "CONTAINER_ENV": {
-        "name1": "value1",
-        "name2": "value2"
+        "R_CONFIG_ACTIVE": "pec",
+        "client_name": "dccvalidator"
       },
       "TAGS": {
-        "CostCenter": "NO PROGRAM / 000000",
-        "OwnerEmail": "joe@sagebase.org"
+        "CostCenter": "UMass PECDCC / 106000",
+        "OwnerEmail": "larsson.omberg@sagebase.org"
       },
-      "STACK_NAME_PREFIX": "myapp-dev",
-      "VPC_CIDR": "172.31.0.0/24",
-      "ACM_CERT_ARN": "arn:aws:acm:us-east-1:<DEV_ACCOUNT_ID>:certificate/<DEV_CERT_ID>"
+      "STACK_NAME_PREFIX": "dccvalidator-pec",
+      "VPC_CIDR": "172.38.0.0/24",
+      "ACM_CERT_ARN": "arn:aws:acm:us-east-1:634210816736:certificate/d8a14c40-570c-4901-be4b-55110f817cc9"
     },
     "prod": {
-      "IMAGE_PATH_AND_TAG": "ghcr.io/sage-bionetworks/myapp:release-1.0",
+      "IMAGE_PATH_AND_TAG": "ghcr.io/sage-bionetworks/dccvalidator_pec:v1.1.0",
       "AWS_DEFAULT_REGION": "us-east-1",
       "PORT": "3838",
       "CONTAINER_ENV": {
-        "name1": "value1",
-        "name2": "value2"
+        "R_CONFIG_ACTIVE": "pec",
+        "client_name": "dccvalidator"
       },
       "TAGS": {
-        "CostCenter": "NO PROGRAM / 000000",
-        "OwnerEmail": "joe@sagebase.org"
+        "CostCenter": "UMass PECDCC / 106000",
+        "OwnerEmail": "larsson.omberg@sagebase.org"
       },
-      "STACK_NAME_PREFIX": "myapp-prod",
-      "VPC_CIDR": "172.32.0.0/24",
-      "ACM_CERT_ARN": "arn:aws:acm:us-east-1:<PROD_ACCOUNT_ID>:certificate/<PROD_CERT_ID>"
+      "STACK_NAME_PREFIX": "dccvalidator-pec",
+      "VPC_CIDR": "172.39.0.0/24",
+      "ACM_CERT_ARN": "arn:aws:acm:us-east-1:593604776210:certificate/f0962420-b2e1-44ba-a7f5-fb2826657643"
     }
   }
 }
